@@ -11,7 +11,7 @@ const server = new queuelogd(settings);
 
 function shutdown() {
 	sd.notify('STOPPING=1');
-	server.stop();
+	server.closeAll();
 }
 
 server.on('listening', () => {
@@ -27,4 +27,4 @@ server.on('insert-failure', info => {
 	console.log(JSON.stringify(server.columns.map(name => info.data[name])));
 });
 server.on('shutdown-complete', () => sd.watchdog.stop());
-server.start(sd.socket() || settings.listen);
+server.listen(sd.socket() || settings.listen);

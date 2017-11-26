@@ -31,6 +31,7 @@
   },
   "homepage": "https://github.com/cfware/queuelogd#readme",
   "dependencies": {
+    "@cfware/queue_log-mysql": "^0.1.0",
     "systemd-daemon": "^1.1.1"
   },
   "devDependencies": {
