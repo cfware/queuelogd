@@ -1,0 +1,39 @@
+{
+  "name": "@cfware/queuelogd",
+  "version": "0.1.0",
+  "description": "CFWare Queue Logger SystemD Daemon",
+  "bin": {
+    "cfware-queuelogd": "cfware-queuelogd.js"
+  },
+  "scripts": {
+    "test": "eslint *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cfware/queuelogd.git"
+  },
+  "author": "Corey Farrell",
+  "license": "MIT",
+  "keywords": [
+    "asterisk",
+    "queue_log",
+    "queuemetrics",
+    "systemd"
+  ],
+  "files": [
+    "cfware-queuelogd.*",
+    "logrotate",
+    "rsyslog.conf",
+    ".eslintrc.json"
+  ],
+  "bugs": {
+    "url": "https://github.com/cfware/queuelogd/issues"
+  },
+  "homepage": "https://github.com/cfware/queuelogd#readme",
+  "dependencies": {
+    "systemd-daemon": "^1.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0"
+  }
+}

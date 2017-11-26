@@ -1,0 +1,10 @@
+[Unit]
+Description=CFWare Queue Logger Socket
+
+[Socket]
+ListenStream=/run/cfware-queuelogd.sock
+SocketGroup=cfware-queuelogd
+SocketMode=0660
+
+[Install]
+WantedBy=sockets.target
